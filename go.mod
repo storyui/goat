@@ -1,4 +1,4 @@
-module github.com/orgs/storyui/goap
+module github.com/storyui/goat
 
 go 1.23.2
 

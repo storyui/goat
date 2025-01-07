@@ -3,8 +3,8 @@ package cmd
 import (
 	"errors"
 
-	"github.com/orgs/storyui/goap/internal/exec"
 	"github.com/spf13/cobra"
+	"github.com/storyui/goat/internal/exec"
 )
 
 var execCmd = &cobra.Command{
@@ -21,4 +21,9 @@ var execCmd = &cobra.Command{
 		d := exec.NewExec()
 		d.Run(environment, goatConfig)
 	},
+}
+
+func init() {
+	execCmd.PersistentFlags().StringVar(&workDir, "work-dir", ".", "working directory")
+	rootCmd.AddCommand(execCmd)
 }

@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/orgs/storyui/goap/config"
 	"github.com/pterm/pterm"
+	"github.com/storyui/goat/config"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/exp/rand"
 )
