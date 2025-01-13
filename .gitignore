@@ -1,1 +1,2 @@
-playground/goat.yaml
+playground/goat.yaml# Added by goreleaser init:
+dist/
